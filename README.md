@@ -1,2 +1,2 @@
-# personal-website
+# lilis-cafe
 My personal website
