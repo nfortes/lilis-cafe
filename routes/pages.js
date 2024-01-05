@@ -4,7 +4,7 @@ const router = Router();
 
 router.route('/')
     .get(function (req, res) {
-        res.render('home', { pageTitle: 'Lili\'s Cafe' });
+        res.render('home', { pageTitle: 'lili\'s cafe' });
     });
 
 router.route('/my-interests')
