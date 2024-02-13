@@ -6,6 +6,7 @@ body {
   gap: 30px;
 }
 
+
 #interests {
   display: grid;
   grid-template-columns: 50% 25% 25%;
@@ -15,15 +16,24 @@ body {
   }
 }
 
+#art-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
 .inner-arc {
   border: 1px solid black;
   border-radius: 50% 50% 0 0; /* creates a half oval shape */
   overflow: hidden; /* hides the overflow content outside the oval shape */
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 95%;
+  text-align: center;
+  padding:10px;
 
   img {
     width: 75%;
