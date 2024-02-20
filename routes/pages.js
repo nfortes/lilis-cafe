@@ -1,20 +1,13 @@
 import { Router } from 'express';
 const router = Router();
-// import 
+import path from 'path';
+
+const __dirname = path.resolve();
 
 router.route('/')
     .get(function (req, res) {
-        res.render('home', { pageTitle: 'lili\'s cafe' });
+        const filePath = path.join(__dirname, 'public/static/index.html');
+        res.sendFile(filePath);
     });
-
-router.route('/my-interests')
-    .get(function (req, res) {
-        res.render('my-interests', { pageTitle: 'My Interests' });
-    })
-
-router.route('/skills-and-experience')
-    .get(function (req, res) {
-        res.render('skills-and-experience', { pageTitle: 'Skills and Experience' });
-    })
 
 export default router;
